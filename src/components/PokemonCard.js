@@ -1,4 +1,6 @@
 import React from "react";
+import "../style/PokemonCard.scss";
+import "../style/base/_base.scss";
 
 export default class PokemonCard extends React.Component {
   state = {
@@ -21,16 +23,20 @@ export default class PokemonCard extends React.Component {
 
   render() {
     return (
-      <div>
-        <h5>{this.state.pokemonIndex}</h5>
-        <h1>
-          {this.state.name
-            .toUpperCase()
-            .split("-")
-            .map(letter => letter.charAt(0).toUpperCase() + letter.substring(1))
-            .join(" ")}
-        </h1>
+      <div className="pokemonCardContainer">
         <img src={this.state.imageUrl} alt="IMAGENOTLOADED" />
+        <div className="wrapperIndexName">
+          <h3>{this.state.pokemonIndex}.</h3>
+          <h1 style={{ fontWeight: 300 }}>
+            {this.state.name
+              .toUpperCase()
+              .split("-")
+              .map(
+                letter => letter.charAt(0).toUpperCase() + letter.substring(1)
+              )
+              .join(" ")}
+          </h1>
+        </div>
       </div>
     );
   }

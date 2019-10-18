@@ -1,6 +1,7 @@
 import React from "react";
 import PokemonCard from "./PokemonCard";
 import axios from "axios";
+import "../style/PokemonCard.scss";
 
 class PokemonList extends React.Component {
   state = {
@@ -17,17 +18,19 @@ class PokemonList extends React.Component {
     return (
       <React.Fragment>
         {this.state.pokemon ? (
-          <div>
+          <div className="pokemonListContainer">
             {this.state.pokemon.map(pokemon => (
-              <PokemonCard
-                key={pokemon.name}
-                name={pokemon.name}
-                url={pokemon.url}
-              />
+              <div className="Nested">
+                <PokemonCard
+                  key={pokemon.name}
+                  name={pokemon.name}
+                  url={pokemon.url}
+                />
+              </div>
             ))}
           </div>
         ) : (
-          <h1>Loading Pokemon</h1>
+          <h1>Loading Pokemon...</h1>
         )}
       </React.Fragment>
     );
