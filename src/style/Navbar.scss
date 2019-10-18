@@ -1,0 +1,11 @@
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 2.5rem;
+  background-color: #5eb7b7;
+  .navbar {
+    color: white;
+    font-size: 3rem;
+    letter-spacing: 2px;
+  }
+}
