@@ -2,7 +2,7 @@ import React from "react";
 import "../style/PokemonCard.scss";
 import "../style/base/_base.scss";
 
-export default class PokemonCard extends React.Component {
+class PokemonCard extends React.Component {
   state = {
     name: "",
     imageUrl: "",
@@ -41,3 +41,5 @@ export default class PokemonCard extends React.Component {
     );
   }
 }
+
+export default PokemonCard;
