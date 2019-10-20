@@ -4,14 +4,14 @@ import Dashboard from "./Dashboard";
 import PokemonDetails from "./PokemonDetails";
 import NotFoundPage from "./NotFoundPage";
 
-const Route = () => (
+const Routes = () => (
   <BrowserRouter>
     <Switch>
-      <Route exact path="/" component={Dashboard} />
+      <Route exact={true} path="/" component={Dashboard} />
       <Route path="/pokemon" component={PokemonDetails} />
       <Route component={NotFoundPage} />
     </Switch>
   </BrowserRouter>
 );
 
-export default Route;
+export default Routes;

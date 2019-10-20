@@ -1,8 +1,9 @@
 import React from "react";
+import Navbar from "./Navbar";
 
 const PokemonDetails = () => (
   <div>
-    <h1> This is Pokemon Details page</h1>
+    <Navbar />
   </div>
 );
 
