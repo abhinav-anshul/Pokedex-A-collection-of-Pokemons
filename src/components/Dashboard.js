@@ -9,7 +9,6 @@ class Dashboard extends React.Component {
       <div>
         <Navbar />
         <PokemonList />
-        <PokemonDetails />
       </div>
     );
   }

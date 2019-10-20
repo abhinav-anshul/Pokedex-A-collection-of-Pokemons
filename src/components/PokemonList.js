@@ -2,6 +2,7 @@ import React from "react";
 import PokemonCard from "./PokemonCard";
 import axios from "axios";
 import "../style/PokemonCard.scss";
+import { BrowserRouter, Route, Switch, Link, NavLink } from "react-router-dom";
 
 class PokemonList extends React.Component {
   state = {
