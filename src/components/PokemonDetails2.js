@@ -193,14 +193,16 @@ class PokemonDetails2 extends React.Component {
               <Link to="/">
                 <button
                   style={{
-                    color: "#6cbbf6",
+                    color: "#090057",
+                    borderRadius: "0.2rem",
                     border: "none",
                     textAlign: "center",
                     padding: "0.5rem",
                     textDecoration: "none",
                     display: "inline-block",
                     cursor: "4px 2px",
-                    fontSize: "2rem"
+                    fontSize: "2rem",
+                    cursor: "pointer"
                   }}
                 >
                   Back

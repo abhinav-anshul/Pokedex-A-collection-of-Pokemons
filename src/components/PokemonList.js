@@ -6,7 +6,7 @@ import { BrowserRouter, Route, Switch, Link, NavLink } from "react-router-dom";
 
 class PokemonList extends React.Component {
   state = {
-    url: "https://pokeapi.co/api/v2/pokemon/?offset=0&limit=20",
+    url: "https://pokeapi.co/api/v2/pokemon/?offset=0&limit=1000",
     pokemon: null
   };
 
