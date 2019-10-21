@@ -1,8 +1,8 @@
 import React from "react";
 import Navbar from "./Navbar";
 import axios from "axios";
-import "bootstrap/dist/css/bootstrap.min.css";
-import { white } from "ansi-colors";
+//import "bootstrap/dist/css/bootstrap.min.css";
+//import { white } from "ansi-colors";
 
 const TYPE_COLORS = {
   bug: "B1C12E",
@@ -183,7 +183,8 @@ class PokemonDetails extends React.Component {
   render() {
     return (
       <div>
-        <Navbar />
+        <Navbar />{" "}
+        {/* 
         <div className="col">
           <div className="card">
             <div className="card-header">
@@ -377,7 +378,7 @@ class PokemonDetails extends React.Component {
               </div>
               <div className="row mt-1">
                 <div className="col">
-                  <p className="">{this.state.description}</p>
+                  <h2 className="">{this.state.description}</h2>
                 </div>
               </div>
             </div>
@@ -482,6 +483,7 @@ class PokemonDetails extends React.Component {
             </div>
           </div>
         </div>
+        */}
       </div>
     );
   }
